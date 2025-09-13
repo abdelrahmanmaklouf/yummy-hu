@@ -789,3 +789,58 @@ color:black;
   font-size: 14px;
   color: #455a64;
 }
+
+/* موبايلات لحد 768px */
+@media (max-width: 768px) {
+  header {
+    height: auto; /* بدل 18% نخليها ديناميكية */
+    padding: 10px 0;
+  }
+
+  .top-bar {
+    flex-direction: column;
+    text-align: center;
+    padding: 10px;
+  }
+
+  .top-bar a {
+    margin: 5px;
+    font-size: 14px;
+  }
+
+  .main-header {
+    flex-direction: column;
+    padding: 10px;
+  }
+
+  .search-box {
+    max-width: 100%;
+    margin: 10px 0;
+    width: 90%;
+  }
+
+  .header-links {
+    flex-direction: column;
+    margin-top: 10px;
+  }
+
+  .header-links a {
+    margin: 5px 0;
+    font-size: 15px;
+  }
+}
+
+/* شاشات أصغر من 480px (موبايل صغير جدًا) */
+@media (max-width: 480px) {
+  .top-bar a {
+    font-size: 12px;
+  }
+
+  .search-box input {
+    font-size: 14px;
+  }
+
+  .header-links a {
+    font-size: 13px;
+  }
+}
