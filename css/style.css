@@ -791,17 +791,22 @@ color:black;
   color: #455a64;
 }
 
-/* موبايلات لحد 768px */
 @media (max-width: 768px) {
   header {
-    height: auto; /* بدل 18% نخليها ديناميكية */
-    padding: 10px 0;
+    height: auto;
+    padding: 0px 0;
+  }
+
+  .top-bar .top-right {
+    /* display: none; */
+        flex-direction: row;  
+    justify-content: space-between;
   }
 
   .top-bar {
-    flex-direction: column;
+    flex-direction: row;
     text-align: center;
-    padding: 10px;
+    padding: 3px;
   }
 
   .top-bar a {
@@ -810,28 +815,31 @@ color:black;
   }
 
   .main-header {
-    flex-direction: column;
-    padding: 10px;
+    flex-direction: row;  
+    justify-content: space-between;
   }
 
   .search-box {
+    display: none;
     max-width: 100%;
     margin: 10px 0;
     width: 90%;
   }
 
+
   .header-links {
-    flex-direction: column;
-    margin-top: 10px;
+    flex-wrap: wrap; 
+    gap: 10px;
   }
 
+
   .header-links a {
-    margin: 5px 0;
+    margin: 5px 10px;
     font-size: 15px;
   }
 }
 
-/* شاشات أصغر من 480px (موبايل صغير جدًا) */
+
 @media (max-width: 480px) {
   .top-bar a {
     font-size: 12px;
